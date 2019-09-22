@@ -1,0 +1,11 @@
+<ul class="list-group" *ngFor="let fruit of fruits" >
+  <li class="list-group-item " >{{fruit}}</li>
+
+</ul>
+
+<p  *ngIf="toggle" > Hello Every one welcome to the derictives </p>
+
+<button (click)="change(searchText.value)">Change</button>
+<input type="text" placeholder="search" #searchText>
+<app-login></app-login>
+my name is {{name}}
