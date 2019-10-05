@@ -1,18 +1,32 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import {RouterModule} from '@angular/router'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LoginComponent } from './login/login.component';
 
+import { AboutComponent } from './about/about.component';
+import { HomeComponent } from './home/home.component';
+import { ComponetnotfoundComponent } from './componetnotfound/componetnotfound.component';
+import {SharedModule} from './shared/shared.module';
+import { WelcomeComponent } from './welcome/welcome.component';
+import { ProductInfoComponent } from './product-info/product-info.component';
+import { ProductDetailsComponent } from './product-details/product-details.component'
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+  
+    AboutComponent,
+    HomeComponent,
+    ComponetnotfoundComponent,
+    WelcomeComponent,
+    ProductInfoComponent,
+    ProductDetailsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SharedModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

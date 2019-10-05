@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import {Router} from '@angular/router'
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -10,9 +10,13 @@ export class AppComponent {
   toggle=false;
   name="abhishek"
   fruits=['banana','apple','orange','pinapple']
+ constructor(private route:Router)
+ {
 
-  change(val:any)
-  { alert(val)
-   this.toggle=true 
+ }
+  nevigate()
+  {
+    alert('hi')
+    this.route.navigate('/welcome')
   }
 }
