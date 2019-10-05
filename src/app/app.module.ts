@@ -10,7 +10,8 @@ import { ComponetnotfoundComponent } from './componetnotfound/componetnotfound.c
 import {SharedModule} from './shared/shared.module';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { ProductInfoComponent } from './product-info/product-info.component';
-import { ProductDetailsComponent } from './product-details/product-details.component'
+import { ProductDetailsComponent } from './product-details/product-details.component';
+import { NewcomponentComponent } from './newcomponent/newcomponent.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +21,8 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
     ComponetnotfoundComponent,
     WelcomeComponent,
     ProductInfoComponent,
-    ProductDetailsComponent
+    ProductDetailsComponent,
+    NewcomponentComponent
   ],
   imports: [
     BrowserModule,
